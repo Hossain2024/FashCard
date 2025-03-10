@@ -8,9 +8,9 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const flashcards = [
-    { question: "What is the capital of France?", answer: "Paris" },
-    { question: "What is the capital of Australia?", answer: "Canberra" },
-    { question: "What is the capital of Canada?", answer: "Ottawa" },
+    { question: "What is the capital of France?", answer: "Paris"},
+    { question: "What is the capital of Australia?", answer: "Canberra"},
+    { question: "What is the capital of Canada?", answer: "Ottawa"},
   ];
 
   const handleFlip = () =>{
