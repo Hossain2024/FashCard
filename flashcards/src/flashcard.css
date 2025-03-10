@@ -1,0 +1,8 @@
+.flashcard{  
+    height:500px;
+    width:900px;
+    size:contain; 
+    background-image:url(./assets/confettiFlashard.jpeg);
+    background-repeat: no-repeat; 
+  }
+  

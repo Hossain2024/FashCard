@@ -4,31 +4,41 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  const flashcards = [
+    { question: "What is the capital of France?", answer: "Paris" },
+    { question: "What is the capital of Australia?", answer: "Canberra" },
+    { question: "What is the capital of Canada?", answer: "Ottawa" },
+  ];
+
+  const handleFlip = () =>{
+    setIsFlipped(!isFlipped);
+  }
+
+  const nextCard = () => {
+    setIsFlipped(false);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % flashcards.length);
+  }
+  const prevCard = () => {
+    setIsFlipped(false);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? flashcards.length - 1 : prevIndex - 1
+    );
+  };
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className= "background">
+      <div className= "flashcard" onClick ={handleFlip}>
+      {isFlipped ? flashcards[currentIndex].answer : flashcards[currentIndex].question}
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className= "buttons">
+        <button onClick={prevCard}>Previous</button>
+        <button onClick={nextCard}>Next</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      </div>
+   
   )
 }
 
