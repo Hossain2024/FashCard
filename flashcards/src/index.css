@@ -1,11 +1,7 @@
 *{
   box-sizing: border-box;
 }
-.background{
-  margin:0;
-  padding:0;
-  height: 100vh;
-  width:100vw;
+.background{  
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(./assets/FlashcardBackground.jpeg);
@@ -16,41 +12,72 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.flashcard{  
-  height:500px;
-  width:900px;
-  size:contain; 
-  background-image:url(./assets/confettiFlashard.jpeg);
-  background-repeat: no-repeat; 
-  cursor: pointer;
+.flashcard-container {
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-display: flex;
-  align-content:center;
-  font-size: larger;
-}
-.flashcard:hover {
-  transform: scale(1.05);
+  
 }
 
-.buttons {
+
+.button-container {
   margin-top: 20px;
 }
 
+
 button {
-  margin: 5px;
   padding: 10px 20px;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
+  margin: 0 10px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-button:hover {
-  background-color: #45a049;
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+h1 {
+  font-size: 2.5rem; 
+  color: #2c3e50; 
+  text-align: center; 
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+  border-bottom: 4px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* Subheading (h2) */
+h2 {
+  font-size: 2rem; 
+  color: #34495e; 
+  margin-top: 30px; 
+  margin-bottom: 15px; 
+  font-weight: 600; 
+  text-align: left; 
+  font-style: italic;
+  padding-bottom: 30px;
+}
+.inputstyle{
+ padding-bottom: 20px
+}
+
+input{
+  height: 45px;
+  width: 300px;
+  border-radius:10px;
+ 
+
+}
+.submitbutton{
+  height: 45px;
+  border-radius: 10px;
 }
