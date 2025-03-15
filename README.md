@@ -1,27 +1,26 @@
-# flashcard
- Web Development Project 2 - *Flashcard*
+# Web Development Project 3 - *Flashcards*
 
-Submitted by: **Maliha**
+Submitted by: **Maliha Hossain**
 
-This web app: **insert description**
+This web app: **allows users to learn about general knowlege questions through flashcards**
 
-Time spent: **5** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ yes] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [yes ] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [yes ] **A list of card pairs is created**
-- [ yes] **Clicking on the card shows the corresponding component of the information pair**
-- [ yes] **Clicking the next button displays a random new card**
+- [ yes] **The user can enter their guess in a box before seeing the flipside of the card**
+- [yes ] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [yes ] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [ yes] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
+- [ ] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -29,16 +28,10 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
-<div>
-    <a href="https://www.loom.com/share/f99d782ce1a54d2a85c05c7a18ccb730">
-      <p>Videos | Library | Loom - 9 March 2025 - Watch Video</p>
-    </a>
-    <a href="https://www.loom.com/share/f99d782ce1a54d2a85c05c7a18ccb730">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f99d782ce1a54d2a85c05c7a18ccb730-6411316bb2f3f140-full-play.gif">
-    </a>
-  </div>
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
 <!-- Recommended tools:
@@ -48,7 +41,7 @@ GIF created with ...
 
 ## Notes
 
-the methods were challenging to imoletment. structuring the code was a bit difficult too. 
+I didnt't face any challenge in this part.
 
 ## License
 
@@ -65,9 +58,6 @@ the methods were challenging to imoletment. structuring the code was a bit diffi
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
-
-
 
 
 
